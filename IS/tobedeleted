@@ -1,6 +1,0 @@
-INSERT INTO Users 
-(`FirstName`, `LastName`, `AdmissionNumber`, `Gender`, `email`, `password`) 
-VALUES 
-('Sharon', 'Muinde', '110243', 'Female', 'sharonmuinde@gmail.com', '12455'),
-('Mohammed', 'Ali', '111228', 'Male', 'mohammedali@gmail.com', '16645'),
-('Joan', 'Kering', '112775', 'Female', 'joankering@gmail.com', '12895');
