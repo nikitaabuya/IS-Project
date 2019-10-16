@@ -20,7 +20,7 @@
     }
 
     // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-    if ($stmt = $con->prepare('SELECT * FROM users WHERE email = ?')) 
+    if ($stmt = $con->prepare('SELECT * FROM Users WHERE Email = ?')) 
     {
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
         $stmt->bind_param('s', $_POST['Email']);
@@ -49,15 +49,15 @@
                 header('Location: home.php');            
             } 
             else 
-            {
+            {                
                 echo '<h1>Incorrect password!</h1>';
-                header( "refresh:2; url=login.html" );
+                header( "refresh:1; url=login.html" );
             }
         } 
         else 
         {
             echo '<h1>Incorrect Email!</h1>';
-            header( "refresh:2; url=login.html" );
+            header( "refresh:1; url=login.html" );
         }
         $stmt->close();
     }

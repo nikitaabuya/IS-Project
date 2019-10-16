@@ -35,12 +35,12 @@
         if (mysqli_num_rows($res_e) > 0) 
         {
           echo "<h1>Email already exist</h1>"; 
-          header( "refresh:2; url=login.html" );	
+          header( "refresh:2; url=registration.html" );	
         }
         else if(mysqli_num_rows($res_am) > 0)
         {
           echo "<h1>Admission number already exists</h1>";
-          header( "refresh:2; url=login.html" );
+          header( "refresh:2; url=registration.html" );
         }
         else
         {
